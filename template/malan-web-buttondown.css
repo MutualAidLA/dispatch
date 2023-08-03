@@ -1,0 +1,95 @@
+body {
+  color: #282828;
+  background-color: #C9E7F2;
+}
+
+hr {
+  border-bottom: 1px #282828 solid;
+  margin: 1.5em auto 1.5em auto;
+}
+
+.public-archive .email-metadata {
+  border-top-color: #7e8a9a;
+}
+
+p {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+blockquote {
+  background: transparent !important;
+}
+
+strong span {
+  padding: 0 0.1875em;
+}
+
+.byline,
+.email-detail h1,
+.email-detail__header,
+.email-detail__header a,
+.links {
+  text-align: center !important;
+}
+
+.newsletter-icon {
+  margin: 0 auto;
+}
+
+h3.byline {
+  color: #7e8a9a;
+}
+
+.email-detail__body a,
+.email-detail__footer a {
+  text-decoration: underline;
+}
+
+a.newsletter {
+  text-decoration: none;
+}
+
+.email-detail__body h2 {
+  line-height: 1.5;
+  margin: 2em 0 0;
+}
+
+.email-detail__body h2 strong {
+ font-size: 1.5em;
+}
+
+.newsletter-body h2,
+.public-archive h2 {
+  line-height: 1.5;
+  margin: 2em 0 0;
+}
+
+.newsletter-body h2 strong,
+.public-archive h2 strong {
+ font-size: 1.5em;
+}
+
+.email-detail .description {
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.links {
+  font-size: 1.45rem;
+  line-height: 1.9rem;
+}
+
+.effort {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 567px) {
+  .effort {
+    display: block;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

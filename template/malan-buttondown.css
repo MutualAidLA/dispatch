@@ -1,0 +1,103 @@
+/* What it does: Tells the email client that only light styles are provided but the client can transform them to dark. */
+:root {
+  color-scheme: light;
+  supported-color-schemes: light;
+}
+
+/* What it does: forces Samsung Android mail clients to use the entire viewport */
+#MessageViewBody, #MessageWebViewDiv{
+  width: 100% !important;
+}
+
+div {
+  max-width: 100%;
+}
+
+div, p, li, ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 2.5625em;
+  line-height: 1.125;
+  margin: 0 0 0.5em 0;
+  padding-top: 1em;
+  text-align: center;
+}
+
+h1 img {
+  display: block;
+  margin: 10px auto 10px auto !important;
+  padding-top: 10px;
+}
+
+hr {
+  border-bottom: 1px #000 solid;
+  margin: 1.5em auto 1.5em auto;
+}
+
+p {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+blockquote {
+  border-left-color: hsl(196.1, 32%, 64%);
+  color: #202124;
+}
+
+strong span {
+  padding: 0 0.1875em;
+}
+
+.newsletter-body,
+.newsletter-colophon,
+.newsletter-footer,
+.newsletter-header {
+  max-width: 600px;
+}
+
+.newsletter-body h2 {
+  line-height: 1.5;
+  margin: 2em 0 0;
+}
+
+.newsletter-body h2 strong {
+ font-size: 1.5em;
+}
+
+.newsletter-container {
+  background-color: #C9E7F2;
+  border: 1px solid black;
+  padding: 18px;
+}
+
+.newsletter-footer .links {
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.newsletter-header {
+  text-align: center;
+}
+
+.newsletter-icon {
+  max-width: 100px !important;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.effort {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 567px) {
+  .effort {
+    display: block;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
